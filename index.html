@@ -10,81 +10,96 @@
 <body>
     <h1>Formulário</h1>
     <form>
+    <fieldset>
+        <legend>Dados Usuários</legend>
         <div>
-          
         <label for="nome_completo">Nome Completo</label>
         </div>
         <input type="text" required id="nome_completo" name="nome_completo" placeholder="Insira o seu nome">
         
         <div>
-            <p></p>
+        <p></p>
         <label for="email">E-mail</label>
         </div>
         <input type="text" required name="email" id="email" placeholder="Insira o seu E-mail">
         
         <div>
-            <p></p>
+        <p></p>
         <label for="telefone">Telefone</label>
         </div>
-        <input type="number" nome="telefone" id="telefone" placeholder="Insira o seu Telefone">
+        <input required type="number" nome="telefone" id="telefone" placeholder="Insira o seu Telefone">
+    </fieldset>  
         
+    <fieldset>
+        <legend>Endereço</legend>
         <div>
-            
-          <p></p>
-    
-          <li>Endereço</li>
-          <p></p>
-
-          <div>
           <label for="lodradouro">Logradouro</label>
           </div>
           <input type="text" name="lodradouro" id="lodradouro" placeholder="Insira o seu Logradouro" required>
-          <div>
-              <p></p>
+        <div>
+            <p></p>
             <label for="numero">Número</label>
-          </div>
+        </div>
           <div>
             
             <input type="number" name="numero" id="numero" required placeholder="Insira o seu Número">
           </div>
 
-          <div>
-              <p></p>
-              <label for="bairro">Bairro</label>
-          </div>
-              <input type="text" name="bairro" id="bairro" placeholder="Insira o seu Bairro">
-          <div>
-              <p></p>
-              <label for="cidade">Cidade</label>
-          </div>
-          <input type="text" name="cidade" id="cidade" required placeholder="Insira a sua Cidade">
+        <div>
+            <p></p>
+            <label for="bairro">Bairro</label>
+         </div>
+            <input type="text" name="bairro" id="bairro" placeholder="Insira o seu Bairro">
+        
+        <div>
+            <p></p>
+            <label for="cidade">Cidade</label>
+        </div>
+            <input type="text" name="cidade" id="cidade" required placeholder="Insira a sua Cidade">
          
-          <div>
+        <div>
             <p></p>
             <label for="estado">Estado</label>
         </div>
-        <input type="text" name="estado" id="estado" required placeholder="Insira o seu Estado">
+            <input type="text" name="estado" id="estado" required placeholder="Insira o seu Estado">
       
         <div>
             <p></p>
             <label for="cep">CEP</label>
         </div>
-        <input type="number" name="cep" id="cep" required placeholder="Insira  seu CEP">
-        
+            <input type="number" name="cep" id="cep" required placeholder="Insira  seu CEP">
+    </fieldset>
+    
+    <fieldset>
+        <legend>Estado Civil</legend>
+        <select name="estadoPessoa" id="estadoPessoa" required>
+            <option value="0">--- Selecione ---</option>
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Divorciado(a)</option>
+            <option value="4">Viúvo(a)</option>
+            <option value="5">Separado(a)</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Forma de Contato</legend>
         <div>
-          <p>Preferência de Contato</p>
-            <input type="checkbox" name="emailop" id="emailop">
+          <p></p>
+          <input type="radio" name="opcao" id="emailop">
           <label for="emailop">Email</label>
           
-          <input type="checkbox" name="telop" id="telop">
+          <input type="radio" name="opcao" id="telop">
           <label for="telop">Telefone</label>
         </div>
-
-        <div>
+    </fieldset>
+    
+        <p></p>
+        <input type="checkbox" name="li_concordo" id="li_concordo">
+        <label for="li_concordo">Li e Concordo</label>
         <p></p>
         <button type="reset">Reiniciar Formulário</button>
         <button type="submit">Enviar</button>
-        </div>
 
     </form>
 </body>
