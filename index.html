@@ -26,14 +26,65 @@
             <p></p>
         <label for="telefone">Telefone</label>
         </div>
-        <input type="text" nome="telefone" id="telefone" placeholder="Insira o seu telefone">
+        <input type="number" nome="telefone" id="telefone" placeholder="Insira o seu Telefone">
+        
+        <div>
+            
+          <p></p>
+    
+          <li>Endereço</li>
+          <p></p>
+
+          <div>
+          <label for="lodradouro">Logradouro</label>
+          </div>
+          <input type="text" name="lodradouro" id="lodradouro" placeholder="Insira o seu Logradouro" required>
+          <div>
+              <p></p>
+            <label for="numero">Número</label>
+          </div>
+          <div>
+            
+            <input type="number" name="numero" id="numero" required placeholder="Insira o seu Número">
+          </div>
+
+          <div>
+              <p></p>
+              <label for="bairro">Bairro</label>
+          </div>
+              <input type="text" name="bairro" id="bairro" placeholder="Insira o seu Bairro">
+          <div>
+              <p></p>
+              <label for="cidade">Cidade</label>
+          </div>
+          <input type="text" name="cidade" id="cidade" required placeholder="Insira a sua Cidade">
+         
+          <div>
+            <p></p>
+            <label for="estado">Estado</label>
+        </div>
+        <input type="text" name="estado" id="estado" required placeholder="Insira o seu Estado">
+      
+        <div>
+            <p></p>
+            <label for="cep">CEP</label>
+        </div>
+        <input type="number" name="cep" id="cep" required placeholder="Insira  seu CEP">
+        
+        <div>
+          <p>Preferência de Contato</p>
+            <input type="checkbox" name="emailop" id="emailop">
+          <label for="emailop">Email</label>
+          
+          <input type="checkbox" name="telop" id="telop">
+          <label for="telop">Telefone</label>
+        </div>
 
         <div>
         <p></p>
         <button type="reset">Reiniciar Formulário</button>
         <button type="submit">Enviar</button>
         </div>
-    
 
     </form>
 </body>
